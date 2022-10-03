@@ -29,6 +29,7 @@ header {
     min-height: 25px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 h5 {
     font-family: 'Baloo 2';
