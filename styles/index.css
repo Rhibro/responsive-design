@@ -8,12 +8,11 @@ body {
     min-height: 810px;
     margin: 20px;
 }
-@media only screen and (max-width: 320px) {
+/*@media only screen and (max-width: 320px) {
     .navi {
         display: none;
     }
-    
-}
+}*/
 @media only screen and (max-width: 800px) {
     header {
         max-width: 600px;
@@ -42,6 +41,61 @@ h5 {
     align-self: flex-start;
     
 }
+.nav-links {
+    transition: 0.3s ease;
+}
+.nav-links:hover {
+    color: gray;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+@media (max-width: 700px) {
+    .hamburger{
+        display: block;  
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-links{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-link {
+        margin: 16px 0 ;
+    }
+
+    .nav-links.active{
+        left: 0;
+        
+    }
+
+}
 li {
     font-family: 'Source Sans Pro';
     font-style: normal;
@@ -51,6 +105,11 @@ li {
     color: #FFFFFF;
     margin: 20px;
     display: inline;
+    list-style: none;
+} 
+a {
+    text-decoration: none;
+    color: white;
 }
 .main-content {
     display: flex;

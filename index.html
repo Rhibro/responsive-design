@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Come explore the wonders of Japan">
+    <meta property="og:description" content="Come explore the wonders of Japan">
+    <meta property="twitter:description" content="Come explore the wonders of Japan">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <link href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Japan</title>
 </head>
 <body>
     <header>
         <h5>Head.</h5>
         <nav class="navi">
-            <ul style="list-style:none;">
-                <li>Works</li>
-                <li>Services</li>
-                <li>Contacts</li>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link">Works</a></li>
+                <li><a href="#" class="nav-link">Services</a></li>
+                <li><a href="#" class="nav-link">Contacts</a></li>
             </ul>
-        </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav> 
+        <script src="script.js"></script>   
     </header>
     <div class="main-content">
         <h1>Japan</h1>
@@ -28,7 +38,7 @@
             <source media="(max-width:320px)" srcset="images/sm-mount.png">
             <source media="(max-width:800px)" srcset="images/med-mount.png">
             <source media="(max-width:1440px)" srcset="images/mount.png">
-            <img src="images/mount.png" alt="black and white drawing of a mountain">
+            <img src="images/mount.png" alt="black and white drawing of a mount fuji">
         </picture>
     </div>
 </body>
